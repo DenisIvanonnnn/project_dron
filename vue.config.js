@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: 'project_drongit'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? './'
+    : '/'
 }
